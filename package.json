@@ -1,7 +1,7 @@
 {
   "name": "node-red-contrib-soracom-gps-multiunit",
-  "version": "0.1.1",
-  "description": "This node parses a payload from SORACOM GPS multiunit.",
+  "version": "1.0.0",
+  "description": "This node parses a payload from GPS multiunit SORACOM edition.",
   "main": "soracom_gps_multiunit.js",
   "node-red": {
     "nodes": {

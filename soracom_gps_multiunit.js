@@ -6,7 +6,7 @@ module.exports = function(RED) {
         var node = this;
         node.on('input', function(msg) {
             var value = RED.util.getMessageProperty(msg, node.property);
-            if (value !== undefined) {
+            if (value && value.payload) {
                 const base64buffer = Buffer.from(value.payload, 'base64');
                 const decodedData = base64buffer.toString('ascii');
                 msg.payload = JSON.parse(decodedData);
